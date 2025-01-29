@@ -29,5 +29,5 @@ Projeto desenvolvido durante a participação no curso ONE (Oracle Next Educatio
 
 
 ## 💻 Link da web para jogar 
-[Clique aqui para jogar](https://one-challenge-amigo-secreto.netlify.app/)
- - Deploy feito com Netlify
+[Clique aqui para jogar](https://cat-macedo.github.io/challenge-amigo-secreto/)
+ - Publicação feita com GitHub Pages
