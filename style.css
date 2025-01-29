@@ -91,6 +91,8 @@ body {
 .button-container {
     width: 500px;
     justify-content: center;
+
+    /* Estilos para os dois botões */
     display: flex;
     align-items: center;
     gap: 2em;
@@ -165,6 +167,7 @@ ul {
     background-color: var(--color-button-hover);
 }
 
+/* Estilos para o botão de sorteio desabilitado */
 .button-draw:disabled {
     background-color: var(--color-button-disabled);
     color: rgb(57, 57, 57);
@@ -175,6 +178,7 @@ ul {
     background-color: var(--color-button-disabled);
 }
 
+/* Nova funcionalidade: botão de novo sorteio */
 .button-restart {
     width: 100%;
     height: 60px;
