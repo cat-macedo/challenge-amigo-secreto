@@ -3,7 +3,7 @@
 Projeto desenvolvido durante a participação no curso ONE (Oracle Next Education), ministrado pela Oracle e pela Alura. O jogo, desenvolvido com Programação Web, sorteia um amigo de acordo com os nomes digitados pelo usuário. 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/03863b30-3290-401c-ac22-b7c970c1e507" alt="GIF de demonstração" width=50%>
+  <img src="https://github.com/user-attachments/assets/b151686e-e1da-4013-993e-8b04ec0adc82" alt="GIF de demonstração" width=50%>
 </p>
 
 
