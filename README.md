@@ -24,10 +24,11 @@ Projeto desenvolvido durante a participação no curso ONE (Oracle Next Educatio
 
 ## 🆕 Funcionalidades extras implementadas
 
-- O botão de sorteio fica, inicialmente, desabilitado (cor cinza). Ele só é habilitado quando há pelo menos dois nomes na lista de amigos, para que faça sentido a realização de um sorteio. 
-- Foi criado um novo botão: novo sorteio. Inicialmente, ele também fica desabilitado. Quando um sorteio é realizado, ele é ativado. Se for clicado, ele reinicializa a lista de amigos para um novo sorteio.
+- O botão de sorteio fica, inicialmente, desabilitado (cor cinza). Ele só é habilitado quando há pelo menos dois nomes na lista de amigos, para que faça sentido a realização de um sorteio.
+- Foi criado um novo botão: novo sorteio. Inicialmente, ele também fica desabilitado (cor cinza). Quando um sorteio é realizado, ele é ativado. Se for clicado, ele reinicializa a lista de amigos para um novo sorteio. 
+- Há a possibilidade de sortear vários nomes em uma rodada, pois o botão continua habilitado. Por isso, foi implementada uma verificação que evita o sorteio do mesmo nome mais de uma vez. Além disso, se todos os nomes dessa lista forem sorteados, um aviso será exibido e o botão de sorteio será desabilitado. Deve ser iniciado um novo sorteio.
 
 
 ## 💻 Link da web para jogar 
-[Clique aqui para jogar](https://cat-macedo.github.io/challenge-amigo-secreto/)
+[Clique aqui para jogar]()
  - Publicação feita com GitHub Pages
