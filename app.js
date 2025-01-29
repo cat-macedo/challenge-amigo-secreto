@@ -1,13 +1,5 @@
-/**************************/
-/* Novas funcionalidades: 
-1. O botão de sorteio fica, inicialmente, desabilitado (cor cinza).
-Ele só é habilitado quando há pelo menos dois nomes na lista de amigos,
-para que faça sentido a realização de um sorteio. 
-
-2. Foi criado um novo botão: novo sorteio. Inicialmente, ele também fica 
-desabilitado (cor cinza). Quando um sorteio é realizado, ele é ativado. 
-Se for clicado, ele reinicializa a lista de amigos para um novo sorteio. */
-/**************************/
+// Algumas funcionalidades extras foram implementadas.
+// Elas estão indicadas no código.
 
 /* Variáveis principais */
 let arrayAmigos = [];
@@ -15,6 +7,7 @@ let tamArray = 0;
 let campo = document.getElementById('amigo');
 let listaAmigos = document.getElementById('listaAmigos');
 let resultado = document.getElementById('resultado');
+let listaSorteados = [];
 
 /* Função que adiciona os nomes digitados à lista */
 function adicionarAmigo() {
@@ -52,10 +45,26 @@ function sortearAmigo() {
     // Verifica se o array não está vazio
     if(tamArray != 0) {
         let numMaximo = tamArray;
-        let numAleatorio = parseInt(Math.random()*numMaximo);
 
+        // Nova funcionalidade:
+        // Se todos os nomes já foram sorteados, exibe aviso e desativa o botão de sorteio
+        if (listaSorteados.length == numMaximo) {
+            resultado.innerHTML = 'Todos os nomes já foram sorteados!';
+            document.getElementById('sorteio').setAttribute('disabled', true);
+            return; // Sai da função para evitar execuções desnecessárias
+        }
+
+        let numAleatorio = parseInt(Math.random()*numMaximo + 1);
+
+        // Incluir o número na lista de sorteados apenas se ele ainda não foi sorteado (evitar repetição)
+        if(listaSorteados.includes(numAleatorio)) {
+            return sortearAmigo();
+        } else {
+            listaSorteados.push(numAleatorio);
+        }
+        
         // Exibe o resultado na cor verde
-        let amigoSecreto = arrayAmigos[numAleatorio];
+        let amigoSecreto = arrayAmigos[numAleatorio - 1];
         let mensagem = `O amigo secreto sorteado é: ${amigoSecreto}`;
         resultado.innerHTML = mensagem;
 
@@ -86,6 +95,7 @@ function novoSorteio() {
     resultado.innerHTML = '';
     arrayAmigos = [];
     tamArray = 0;
+    listaSorteados = [];
 
     // Remove os itens li da lista e desativa novamente os botões de sorteio e novo sorteio
     listaAmigos.innerHTML = '';
