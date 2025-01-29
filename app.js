@@ -63,6 +63,9 @@ function sortearAmigo() {
             listaSorteados.push(numAleatorio);
         }
         
+        // Oculta a lista de nomes ao sortear
+        listaAmigos.style.display = 'none';
+
         // Exibe o resultado na cor verde
         let amigoSecreto = arrayAmigos[numAleatorio - 1];
         let mensagem = `O amigo secreto sorteado é: ${amigoSecreto}`;
@@ -96,6 +99,9 @@ function novoSorteio() {
     arrayAmigos = [];
     tamArray = 0;
     listaSorteados = [];
+
+    // Desocultar a lista de nomes
+    listaAmigos.style.display = 'block';
 
     // Remove os itens li da lista e desativa novamente os botões de sorteio e novo sorteio
     listaAmigos.innerHTML = '';
