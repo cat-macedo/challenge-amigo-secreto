@@ -32,3 +32,8 @@ Projeto desenvolvido durante a participação no curso ONE (Oracle Next Educatio
 ## 💻 Link da web para jogar 
 [Clique aqui para jogar](https://cat-macedo.github.io/challenge-amigo-secreto/)
  - Publicação feita com GitHub Pages
+
+## 📚 Badge do challenge
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b6e18e2-3a03-4311-a560-3d9dd93f24b1" alt="badge" width=20%>
+</p>
